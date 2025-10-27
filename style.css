@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#scoreboard {
+  font-size: 1.2rem;
+  color: #c3f1ff;
+}
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+#choices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.choice {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  padding: 20px 35px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.choice:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+#display h2 {
+  margin-bottom: 10px;
+}
+
+#display p {
+  font-size: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#result {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.win {
+  color: #3fe35c;
+}
+.lose {
+  color: #ff4e4e;
+}
+.tie {
+  color: #ffcf40;
+}
+
+.reset-btn {
+  background-color: #ff7f50;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.reset-btn:hover {
+  background-color: #e95a1b;
+}
+

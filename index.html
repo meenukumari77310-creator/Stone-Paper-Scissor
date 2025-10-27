@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissor Pro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>✂️ Stone Paper Scissor Pro</h1>
+      <p id="scoreboard">
+        <span>You: <span id="user-score">0</span></span> |
+        <span>Computer: <span id="comp-score">0</span></span> |
+        <span>Round: <span id="round">1</span></span>
+      </p>
+    </header>
+
+    <main>
+      <section id="choices">
+        <button id="rock" class="choice">🧱 Rock</button>
+        <button id="paper" class="choice">📄 Paper</button>
+        <button id="scissor" class="choice">✂️ Scissor</button>
+      </section>
+
+      <section id="display">
+        <div class="player-choice">
+          <h2>You Chose</h2>
+          <p id="user-choice">❔</p>
+        </div>
+        <div class="computer-choice">
+          <h2>Computer Chose</h2>
+          <p id="comp-choice">❔</p>
+        </div>
+      </section>
+
+      <h2 id="result">Make your move!</h2>
+
+      <div class="buttons">
+        <button id="reset" class="reset-btn">🔁 Restart Game</button>
+      </div>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
